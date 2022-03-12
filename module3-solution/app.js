@@ -36,7 +36,7 @@ function SearchMenuItemController(SearchMenuItemFactory, $http) {
   searchCtl.getFoundItems = function() {
     searchCtl.message = "";
     if (searchCtl.searchStr == null || searchCtl.searchStr == "") {
-      searchCtl.message = "Please enter what item you want";
+      searchCtl.message = "Nothing found";
       return;
     }
 
