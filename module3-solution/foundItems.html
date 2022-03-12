@@ -1,0 +1,14 @@
+<h3>{{ $ctrl.message }}</h3>
+<ul>
+  <li ng-repeat="item in $ctrl.items">
+  <button ng-click="$ctrl.remove($index);">Don't want this one!</button>
+    {{ item.short_name }},  {{ item.name }},  {{ item.description }}
+  </li>
+</ul>
+<!-- <ul>
+  <li ng-repeat="item in ndc.found">
+    {{ item.name }}, {{item.short_name}}, {{ item.description }}
+    <button ng-click="ndc.onRemove({index: $index});">Remove Item</button>
+  </li>
+</ul>
+<h3>{{ ndc.message }}</h3> -->
